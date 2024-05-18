@@ -19,14 +19,18 @@ int main() {
     vector<int> P(N);
     for (int i = 0; i < N; ++i)
         cin >> P[i];
+    int K = 0;
+    for (int i = 0; i < N; ++i){
         if (P[0]>P[N-1])
         {
-            int 
+            x=P[0];
+            y=P[N-1];
+            P[0]=y;
+            P[N-1]=x;
+            K++;
         }
-        
-    int K = 0;
-    
-
+        if (P[i]<P[i+1]) 
+    }
 
     
 
